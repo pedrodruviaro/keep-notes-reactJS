@@ -1,7 +1,7 @@
 import React from 'react'
 import AppHeader from './components/AppHeader'
 import AppAside from './components/AppAside'
-import FormNewNote from './components/FormNewNote'
+import FormSwitcher from './components/FormSwitcher'
 import NotesList from './components/NotesList'
 import MainGridContainer from './components/MainGridContainer';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -20,7 +20,7 @@ function App() {
         </Route>
 
         <Route path="/create">
-          <FormNewNote />
+          <FormSwitcher />
         </Route>
 
         <Route path="*">
