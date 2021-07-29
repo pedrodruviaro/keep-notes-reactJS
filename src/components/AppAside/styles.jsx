@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Menu = styled.aside`
     grid-area: aside;
-    box-shadow: rgba(0, 0, 0, 0.04) 3px 0px 5px;
+    box-shadow: ${props => props.theme.hoverState} 1px 3px 7px;
 `
 
 export const MenuTitle = styled.h2`

@@ -3,7 +3,7 @@ export const lightTheme = {
     text: "#333333",
     primary: "#686de0",
     secondary: "#22a6b3",
-    hoverState: "#33333336"
+    hoverState: "#3333331a"
 }
 
 export const darkTheme = {
@@ -11,5 +11,5 @@ export const darkTheme = {
     text: "#ecf0f1",
     primary: "#686de0",
     secondary: "#22a6b3",
-    hoverState: "#ffffff32"
+    hoverState: "#ffffff1c"
 }

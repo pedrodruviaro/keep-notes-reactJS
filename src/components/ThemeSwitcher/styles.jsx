@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ThemeSwitcher = styled.div`
-    padding: 0 3rem;
+    padding: 0 3rem 0 2rem;
     
     #checkbox {
         opacity: 0;

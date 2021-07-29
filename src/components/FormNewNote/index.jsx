@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import {
   Button,
   FieldsetStyled,
@@ -13,6 +14,9 @@ import {
 
 
 export default function Index() {
+
+  const history = useHistory()
+
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [category, setCategory] = useState("work");
@@ -81,7 +85,11 @@ export default function Index() {
     }
 
     //results
-    console.log({ title, content, category });
+    fetch('http://localhost:5000/notes', {
+      method: "POST",
+      headers: {"Content-type": "application/json"},
+      body: JSON.stringify({title, content, category})
+    }).then(history.push("/"))
   }
 
   return (

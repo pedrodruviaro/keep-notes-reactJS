@@ -4,7 +4,7 @@ export const Header = styled.header`
     grid-area: header;
     display: flex;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    box-shadow: ${props => props.theme.hoverState} 0px 1px 7px;
 
     span {
         width: 13rem;
@@ -28,6 +28,6 @@ export const Header = styled.header`
 
 export const LinksContainer = styled.div`
     width: 100%;
+    flex: 1;
     text-align: right;
-    padding: 0 3rem;
 `

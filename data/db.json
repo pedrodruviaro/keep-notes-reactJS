@@ -1,0 +1,32 @@
+{
+  "notes": [
+    {
+      "title": "new note",
+      "content": "workkkkkkkk",
+      "category": "work",
+      "id": 1
+    },
+    {
+      "title": "new title",
+      "content": "note teste bla ",
+      "category": "study",
+      "id": 2
+    },
+    {
+      "title": "note teste bla ",
+      "content": "note teste bla ",
+      "category": "other",
+      "id": 4
+    }
+  ],
+  "todos": [
+    {
+      "todo": [
+      "task 1",
+      "task 2",
+      "task 3"
+    ], 
+    "id": 5
+  }
+  ]
+}

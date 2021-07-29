@@ -14,7 +14,7 @@ export const FormStyled = styled.form`
   flex-direction: column;
   width: 60%;
   padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: ${props => props.theme.hoverState} 1.95px 1.95px 2.6px;
 `;
 
 export const InputStyled = styled.input`

@@ -15,7 +15,7 @@ export default function Index() {
 
     return (
         <FormSwitcherStyled>
-            <TitlePrimary>What's up ... ? </TitlePrimary>
+            <TitlePrimary>What's up ? </TitlePrimary>
 
             <SelectWrap>
                 <SelectStyled onChange={changeRender}>
