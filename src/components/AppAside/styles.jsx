@@ -37,6 +37,7 @@ export const MenuLink = styled.li`
         flex: 1;
         padding: .75rem;
         padding-left: 1rem;
+        color: ${props => props.theme.text}
     }
 
     svg {
@@ -47,7 +48,7 @@ export const MenuLink = styled.li`
 
 
     &:hover {
-        background-color: #f0f0f0;
+        background-color: ${props => props.theme.hoverState};
     }
 
     .active {

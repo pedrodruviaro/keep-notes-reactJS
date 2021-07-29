@@ -22,6 +22,7 @@ export const InputStyled = styled.input`
   max-width: 100%;
   margin-bottom: 1.5rem;
   outline: none;
+  background: transparent;
   border: 1px solid ${(props) => props.theme.text};
   border-radius: 10px;
   padding: 0.5rem 0.75rem;
