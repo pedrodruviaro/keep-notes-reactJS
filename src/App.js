@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import AppHeader from './components/AppHeader'
+import AppAside from './components/AppAside'
+import FormNewNote from './components/FormNewNote'
+import NotesList from './components/NotesList'
+import MainGridContainer from './components/MainGridContainer';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainGridContainer>
+      <AppHeader />
+
+    <BrowserRouter>
+      <AppAside />
+      <Switch>
+        
+        <Route exact path="/">
+          <NotesList />
+        </Route>
+
+        <Route path="/create">
+          <FormNewNote />
+        </Route>
+
+        <Route path="*">
+          <h1>Invalid route</h1>
+        </Route>
+
+      </Switch>
+    </BrowserRouter>
+
+
+
+    </MainGridContainer>
   );
 }
 
